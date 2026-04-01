@@ -1,0 +1,31 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js" 
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "sass": "^1.80.6"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "detect-libc": "^2.1.2",
+    "express": "^5.2.1",
+    "immutable": "^4.3.8",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "node-addon-api": "^7.1.1",
+    "pg": "^8.20.0",
+    "picomatch": "^4.0.4",
+    "readdirp": "^4.1.2",
+    "source-map-js": "^1.2.1"
+  },
+  "keywords": []
+}
