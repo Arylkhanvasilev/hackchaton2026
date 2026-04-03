@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мой дом</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="container" style="display: flex;flex-direction: column;gap: 5px;">
+        <div class="main">
+            <div class="scene_main">
+                <h1 class="rost" style="margin: 0 !important;font-size: 24px; padding: 16px 0;">Сценарии</h1>
+                <!-- говорим браузеру, что мы хотим разместить форму -->
+                <form id="search-highlight" method="post" action="#">
+                    <!-- добавляем текстовое поле ввода, где будем писать наш поисковый запрос -->
+                    <img src="./images/svg-path-35.svg" alt="" style="position: absolute; padding: 12px;">
+                    <input type="text" name="term" id="term" placeholder="Поиск" class="searchtext rost" />
+                    <!-- конец формы -->
+                </form>
+                <!-- подключаем библиотеку jQuery -->
+                <script src="http://thecode.local/wp-content/uploads/2019/06/jquery.js" type="text/javascript"
+                    defer></script>
+                <!-- подключаем к ней плагин highlight.js -->
+                <script src='http://thecode.local/wp-content/uploads/2019/06/jqueryhighlight.js' defer>
+                </script>
+                <!-- говорим браузеру, что сейчас начнётся скрипт -->
+                <script src=".\scripts\search.js" defer></script>
+                <!-- сразу после формы будем писать, сколько совпадений мы нашли -->
+                <p class="results"></p>
+            </div>
+            <div class="more_scene">
+                <button class="scenes1">
+                    <div style="width: 25px;">
+                        <span
+                            style="width: 15px; height: 2px; background-color: #FF4F12; position: absolute; transform: rotate(90deg);"></span>
+                        <span style="width: 15px; height: 2px; background-color: #FF4F12; position: absolute;"></span>
+                    </div>
+                    <h2 class="rost">Создать сценарий</h2>
+                </button>
+                <div class="scenes">
+                    <img src=".\images\Frame 84.svg" alt="#">
+                    <h2 class="rost">Если в комнате 20% влажности, включить увлажнитель</h2>
+                </div>
+                <div class="scenes">
+                    <img src=".\images\Frame 84 (2).svg" alt="#">
+                    <h2 class="rost">В 22:00 выключить свет</h2>
+                </div>
+                <div class="scenes">
+                    <img src=".\images\Frame 84 (1).svg" alt="#">
+                    <h2 class="rost">Если я не дома, выключить свет</h2>
+                </div>
+                <div class="scenes">
+                    <img src=".\images\Frame 84 (2).svg" alt="#">
+                    <h2 class="rost">В 14:00 установить цвет красный</h2>
+                </div>
+                <div class="scenes">
+                    <img src=".\images\Frame 84 (1).svg" alt="#">
+                    <h2 class="rost">Если я дома, включить свет</h2>
+                </div>
+                <div class="scenes">
+                    <img src=".\images\Frame 84.svg" alt="#">
+                    <h2 class="rost">Если в комнате 30°C, включить кондиционер</h2>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <nav class="nav_bar">
+                <button class="btn_home">
+                    <img src=".\images\svg-path-14 1.svg" alt="#" class="image">
+                    <a class="name rost" href=".\profile.php">Главная</a>
+                </button>
+                <button class="btn_home" href="">
+                    <img src=".\images\scene_active.svg" alt="#" class="image">
+                    <a class="name rost active" href="#">Сценарии</a>
+                </button>
+                <button class="btn_home">
+                    <img src=".\images\more.svg" alt="#" class="image">
+                    <a class="name rost" href=".\more.php">Ещё</a>
+                </button>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

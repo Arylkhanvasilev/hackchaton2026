@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="container" style="display: flex; flex-direction: column;gap: 5px;">
+        <div class="my_house">
+            <img src=".\images\svg-path-36 1.svg" alt="">
+            <h1 class="rost" style="margin: 0 !important;font-size: 24px; padding: 16px 0;">Аккаунт</h1>
+            <form class="profile">
+                <img src="<?= $_SESSION['user']['avatar'] ?>" alt="">
+                <div class="profile_info">
+                    <h2 class="rost" style="margin: 0 !important;font-size: 20px;">
+                        <?= $_SESSION['user']['full_name'] ?>
+                    </h2>
+                    <a href="#">
+                        <?= $_SESSION['user']['email'] ?>
+                    </a>
+                    <a href="vendor/logout.php" class="logout">Выход</a>
+                </div>
+            </form>
+        </div>
+        <div class="main">
+            <div class="parameters">
+                <div class="param_card">
+                    <div style="display: flex; align-items: center; gap: 10px;border-radius: 30px 30px 0 0;">
+                        <img src=".\images\Frame 42.svg" alt="">
+                        <h2 class="rost">Управление домом</h2>
+                    </div>
+                    <img src=".\images\Chevron.svg" alt="">
+                </div>
+                <div class="param_card">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src=".\images\Frame 42 (1).svg" alt="">
+                        <h2 class="rost">Настройки уведомлений</h2>
+                    </div>
+                    <img src=".\images\Chevron.svg" alt="">
+                </div>
+                <div class="param_card">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src=".\images\Frame 42 (2).svg" alt="">
+                        <h2 class="rost">Параметры безопасности</h2>
+                    </div>
+                    <img src=".\images\Chevron.svg" alt="">
+                </div>
+                <div class="param_card">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src=".\images\Frame 42 (3).svg" alt="">
+                        <h2 class="rost">Другие настройки</h2>
+                    </div>
+                    <img src=".\images\Chevron.svg" alt="">
+                </div>
+            </div>
+            <div class="about" style="background-color: white; border-radius: 30px;">
+                <div class="param_card">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src=".\images\Frame 42 (4).svg" alt="">
+                        <h2 class="rost">Условия польззования</h2>
+                    </div>
+                    <img src=".\images\Chevron.svg" alt="">
+                </div>
+                <div class="param_card">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src=".\images\Frame 42 (5).svg" alt="">
+                        <h2 class="rost">Помощь</h2>
+                    </div>
+                    <img src=".\images\Chevron.svg" alt="">
+                </div>
+                <div class="param_card">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src=".\images\Frame 42 (6).svg" alt="">
+                        <h2 class="rost">Оценить приложение</h2>
+                    </div>
+                    <img src=".\images\Chevron.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <nav class="nav_bar">
+                <button class="btn_home">
+                    <img src=".\images\svg-path-14 1.svg" alt="#" class="image">
+                    <a class="name rost" href=".\profile.php">Главная</a>
+                </button>
+                <button class="btn_home" href="">
+                    <img src=".\images\scene.svg" alt="#" class="image">
+                    <a class="name rost" href=".\scene.html">Сценарии</a>
+                </button>
+                <button class="btn_home">
+                    <img src=".\images\more_active.svg" alt="#" class="image">
+                    <a class="name rost active" href="#">Ещё</a>
+                </button>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
